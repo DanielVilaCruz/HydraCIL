@@ -24,13 +24,13 @@ HydraCIL is a decoupled Class-Incremental Learning (CIL) framework designed for 
 - 📉 **Scalable across tasks**  
   Maintains efficiency even as the number of tasks increases.
 
-## Setup
+## 🛠️ Setup
 
 1) Clone the repository
-  ```bash
-  git clone https://github.com/YOUR-REPO/HydraCIL.git
-  cd HydraCIL
-  ```
+    ```bash
+    git clone https://github.com/YOUR-REPO/HydraCIL.git
+    cd HydraCIL
+    ```
 2) Install PyTorch
    
    This project requires PyTorch (with CUDA or CPU support).
@@ -52,14 +52,14 @@ HydraCIL is a decoupled Class-Incremental Learning (CIL) framework designed for 
     - ImageNet-100
     - CoRe50
     - Flowers102
-## Run Experiments
+## 🚀 Run Experiments
+  To replicate the results from the paper, ensure the configuration file (config.json by default) is properly build for the desired benchmark, then execute:
   ```bash
   python main.py --config config.json
   ```
-
-## Benchmark results
-![Accuracy](fig1_accuracy.png)
+  Additionally, if you want to test a trained model on custom data, check inference.py script.
 
 
-
-![Times](fig2_time.png)
+## 📊 Benchmark results
+![Accuracy](imgs/fig1_accuracy.png)
+![Times](imgs/fig2_time.png)

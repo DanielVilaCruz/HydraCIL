@@ -1,0 +1,25 @@
+{
+    "experiment": {
+        "dataset_name": "cifar100",
+        "scenario": "task-incremental", 
+        "num_tasks": 5,
+        "batch_size": 64,
+        "data_size": 224
+    },
+    "model": {
+        "backbone": "resnet34",
+        "pretrained": true,
+        "decoupling": true,
+        "use_ensemble": true
+    },
+    "trainer": {
+        "learning_rate": 0.1,
+        "epochs_per_task": 10,
+        "optimizer_type": "adam",
+        "weight_decay": 0,
+        "buffer_size_per_task": 200,
+        "K_per_class": 2,
+        "verbose": false,
+        "task_aware": false
+    }
+}
