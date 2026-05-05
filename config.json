@@ -1,7 +1,7 @@
 {
     "experiment": {
         "dataset_name": "cifar100",
-        "scenario": "task-incremental", 
+        "scenario": "class-incremental", 
         "num_tasks": 5,
         "batch_size": 64,
         "data_size": 224
