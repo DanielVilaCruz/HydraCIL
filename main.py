@@ -36,7 +36,7 @@ def save_experiment_result(experiment_name, metrics, config, filename='continual
 
 def run_continual_learning_experiment(data_loader=None, model=None, trainer=None):
     tracker = EmissionsTracker(
-            project_name="Resnet34, cifar100, 10 tareas (10 clases por tarea)",
+            project_name=f"{model.backbone_name}, {data_loader.dataset_name}, {data_loader.num_tasks} tasks",
             output_file=f"exps/Continual_Learning_Exp.csv"
         )
     os.makedirs("exps", exist_ok=True)
