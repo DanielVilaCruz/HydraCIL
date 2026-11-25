@@ -28,7 +28,7 @@ HydraCIL is a decoupled Class-Incremental Learning (CIL) framework designed for 
 
 1) Clone the repository
     ```bash
-    git clone https://github.com/YOUR-REPO/HydraCIL.git
+    git clone https://github.com/DanielVilaCruz/HydraCIL.git
     cd HydraCIL
     ```
 2) Install PyTorch
